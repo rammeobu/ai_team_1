@@ -4,6 +4,7 @@ import com.bootcamp.bootcamp.entity.Requireditem;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface Requireditemrepository extends JpaRepository<Requireditem, Long> {
 
@@ -15,7 +16,7 @@ public interface Requireditemrepository extends JpaRepository<Requireditem, Long
 
     List<Requireditem> findByGuestId(String guestId);
 
-    List<Requireditem> findByItemType(String itemType);
+    Optional<Requireditem> findByUserIdAndTravelplanId(Long userId, Long travelplanId);
 
-    List<Requireditem> findByItemStatus(String itemStatus);
+    Optional<Requireditem> findByGuestIdAndTravelplanId(String guestId, Long travelplanId);
 }
