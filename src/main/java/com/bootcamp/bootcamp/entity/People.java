@@ -7,10 +7,19 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+// 여행 인원 정보를 DB에 저장하기 위한 Entity
 @Entity
-@Table(name = "travel_people")
-@Getter @Setter
 
+// 실제 DB 테이블 이름을 travel_people로 지정
+@Table(name = "travel_people")
+
+// getter 자동 생성
+@Getter
+
+// setter 자동 생성
+@Setter
+
+// JPA에서 필요한 기본 생성자 자동 생성
 @NoArgsConstructor
 public class People {
 
