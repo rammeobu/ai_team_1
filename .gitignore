@@ -36,5 +36,5 @@ out/
 ### VS Code ###
 .vscode/
 
-### 환경변수 관련#
 .env
+
