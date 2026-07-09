@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "users")
 @Getter @Setter
 //카카오톡 api 받아올수 있는 : 닉네임, 프로필사진, 이메일
 @Builder
@@ -34,5 +35,15 @@ public class User {
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    @PrePersist
+    public void prePersist() {
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+    }
+
+    @PreUpdate
+    public void preUpdate() {
+        this.updatedAt = LocalDateTime.now();
+    }
 
 }
