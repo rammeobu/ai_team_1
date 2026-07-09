@@ -23,6 +23,7 @@ public class Dashboard {
     private Long budgetId;
 
     // 여행 일정 데이터와 연결하기 위한 여행 일정 ID
+
     private Long travelplanId;
 
     // 로그인한 사용자의 ID
