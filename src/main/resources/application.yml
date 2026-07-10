@@ -31,6 +31,18 @@ spring:
               - profile_nickname
               - account_email
 
+          # 웹(테스트)용 카카오 로그인 - 앱용과 동일한 카카오 앱이지만 redirect-uri만 다름
+          kakao-web:
+            provider: kakao
+            client-id: ${KAKAO_CLIENT_ID}
+            client-secret: ${KAKAO_CLIENT_SECRET}
+            redirect-uri: "{baseUrl}/login/oauth2/code/kakao-web"
+            authorization-grant-type: authorization_code
+            client-authentication-method: client_secret_post
+            scope:
+              - profile_nickname
+              - account_email
+
         provider:
           kakao:
             authorization-uri: https://kauth.kakao.com/oauth/authorize

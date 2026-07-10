@@ -28,8 +28,11 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
 
         String provider = userRequest.getClientRegistration().getRegistrationId();
 
+        // 웹 테스트용 registration(kakao-web 등)은 "-web" 접미사를 떼고 원래 provider로 처리
+        String baseProvider = provider.replace("-web", "");
+
         OAuth2UserInfo userInfo =
-                OAuth2UserInfoFactory.of(provider, oAuth2User.getAttributes());
+                OAuth2UserInfoFactory.of(baseProvider, oAuth2User.getAttributes());
 
         User user = userservice.signUpLogin(userInfo);
 
