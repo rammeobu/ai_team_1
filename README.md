@@ -121,4 +121,4 @@
 ./gradlew bootRun
 ```
 
-- API 문서: `http://localhost:8080/swagger-ui.html`
+- API 문서: `https://api.withact.xyz/swagger-ui/index.html`
