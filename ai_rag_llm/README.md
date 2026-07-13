@@ -35,13 +35,13 @@ ai_rag_llm/
 
 ```env
 OPENROUTER_API_KEY=sk-or-...
-OPENROUTER_MODEL=openai/gpt-4o-mini
-OPENROUTER_HTTP_REFERER=https://your-app.example
-OPENROUTER_APP_TITLE=MetU
+OPENROUTER_MODEL=
+OPENROUTER_HTTP_REFERER=https:
+OPENROUTER_APP_TITLE=
 
 # 하위 호환 (없으면 OPENROUTER 사용)
 OPENAI_API_KEY=
-OPENAI_MODEL=gpt-4o-mini
+OPENAI_MODEL=
 ```
 
 ## 주요 모드 (`POST /ai/chat` `mode`)
