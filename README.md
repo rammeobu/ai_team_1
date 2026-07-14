@@ -7,7 +7,7 @@
 ![Dart SDK](https://img.shields.io/badge/Dart-%3E%3D3.0.0-0175C2?logo=dart&logoColor=white)
 ![State](https://img.shields.io/badge/State-Provider-4B32C3)
 ![HTTP](https://img.shields.io/badge/HTTP-Dio-00B4AB)
-![AI]([https://img.shields.io/badge/AI-OpenRouter%20gpt--4o--mini-8A2BE2](https://img.shields.io/badge/AI-OpenRouter%20Grok-8A2BE2))
+![AI](https://img.shields.io/badge/AI-OpenRouter%20Grok-8A2BE2)
 
 ---
 
