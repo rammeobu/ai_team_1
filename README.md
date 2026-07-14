@@ -108,7 +108,7 @@
 | HTTP 클라이언트 | [Dio](https://pub.dev/packages/dio) (인터셉터로 인증·에러 메시지 변환) |
 | 로컬 저장 | `shared_preferences`(설정·예산), `flutter_secure_storage`(토큰·API 키) |
 | 인증 | `flutter_web_auth_2` (OAuth2 브라우저 플로우, 콜백 `withact://`) |
-| AI | [OpenRouter](https://openrouter.ai) — OpenAI Chat Completions 호환 (`gpt-4o-mini`) |
+| AI | [OpenRouter](https://openrouter.ai) — OpenAI Chat Completions 호환 (`grok-4.5`) |
 
 **아키텍처 계층**: `screens`(UI) → `providers`(상태) → `services`(도메인·네트워크·AI) → `models`(데이터). AI 파이프라인은 `services/` 계층에 위치해 화면과 분리.
 
